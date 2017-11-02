@@ -29,7 +29,14 @@ end
 
 # 6. Find the total of everyone's money
 # (hint: use the people array)
-
+def total_money(array_of_people)
+total_monies = 0
+  for person in array_of_people
+    cash = person[:monies]
+    total_monies += cash
+  end
+return total_monies
+end
 
 # 7. For two given people, allow the first person to loan a given value of money to the other
 # (hint: you need to pass in the lender, the lendee, and the amount for this function)
