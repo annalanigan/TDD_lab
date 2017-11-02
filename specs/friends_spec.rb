@@ -128,9 +128,17 @@ end
 
   # 9. Find people with no friends
   # (hint: return an array, there might be more people in the future with no friends!)
-
+  def test_nae_pals
+    result = nae_pals(@people)
+    assert_equal(["Dave"], result)
+  end
 
   # Optional, VERY TOUGH
   # 10. Find the people who have the same favourite tv show
+#   def test_same_tv_show
+#     result - same_tv_show(@people)
+#     assert_equal( {"Pokemon" => ["Keith" ,"Val"]}, result)
+#
+#   end
 
 end
