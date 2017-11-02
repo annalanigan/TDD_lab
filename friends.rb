@@ -17,7 +17,9 @@ end
 
 # 4. For a given person, add a new name to their list of friends
 # (hint: Add a new string to the friends array, then test for the length of the array, not the return value of your add_friend method)
-
+def new_friend(person, friend)
+ person[:friends]<< friend
+end
 
 # 5. For a given person, remove a specific name from their list of friends
 # (hint: Same as above, testing for the length of the array should be sufficient)
