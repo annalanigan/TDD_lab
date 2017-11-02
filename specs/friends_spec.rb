@@ -120,6 +120,10 @@ end
 
   # 8. Find the set of everyone's favourite food joined together
   # (hint: concatenate the favourites/things_to_eat arrays together)
+  def test_all_favourite_foods
+    result = all_favourite_foods(@people).length
+    assert_equal(7, result)
+  end
 
 
   # 9. Find people with no friends

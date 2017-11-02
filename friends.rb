@@ -48,7 +48,13 @@ end
 
 # 8. Find the set of everyone's favourite food joined together
 # (hint: concatenate the favourites/things_to_eat arrays together)
-
+def all_favourite_foods(array)
+  total_foods = []
+  for person in array
+    total_foods.concat(person[:favourites][:things_to_eat])
+  end
+return total_foods
+end
 
 # 9. Find people with no friends
 # (hint: return an array, there might be more people in the future with no friends!)
